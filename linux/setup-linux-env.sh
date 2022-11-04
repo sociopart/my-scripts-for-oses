@@ -13,9 +13,11 @@ sudo apt install -y git fsearch ulauncher wmctrl wget
 wget https://wdl1.pcfg.cache.wpscdn.com/wpsdl/wpsoffice/download/linux/11664/wps-office_11.1.0.11664.XA_amd64.deb
 sudo apt install -y ./wps-office_11.1.0.11664.XA_amd64.deb
 
-wget http://download.cdn.viber.com/cdn/desktop/Linux/viber.deb
-sudo apt install -y ./viber.deb
-sudo flatpak install flathub com.viber.Viber --assumeyes
+wget https://github.com/peazip/PeaZip/releases/download/8.9.0/peazip_8.9.0.LINUX.GTK2-1_amd64.deb
+sudo apt install -y ./peazip_8.9.0.LINUX.GTK2-1_amd64.deb
+
+rm -rf ./wps-office_11.1.0.11664.XA_amd64.deb
+rm -rf ./peazip_8.9.0.LINUX.GTK2-1_amd64.deb
 # Add rights to software
 snap connect discord:system-observe
 snap connect firefox:system-observe
